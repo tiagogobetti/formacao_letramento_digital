@@ -1,0 +1,30 @@
+:root {
+
+
+--primary:#1a73e8;
+
+--secondary:#34a853;
+
+--accent:#fbbc04;
+
+--danger:#ea4335;
+
+
+--background:#f8f9fa;
+
+--surface:#ffffff;
+
+
+--text:#202124;
+
+--text-light:#5f6368;
+
+
+--radius:16px;
+
+
+--shadow:
+0 4px 12px rgba(0,0,0,.08);
+
+
+}
