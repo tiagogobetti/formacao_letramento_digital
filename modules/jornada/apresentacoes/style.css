@@ -1,0 +1,187 @@
+     
+      .module-content {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 40px 0;
+      }
+
+      /* HERO DO MÓDULO */
+      .module-hero {
+          text-align: center;
+          padding: 60px 0;
+          border-bottom: 2px solid #e8eaed;
+          margin-bottom: 40px;
+      }
+
+      .module-hero .icon {
+          font-size: 64px;
+          margin-bottom: 20px;
+          display: block;
+      }
+
+      .module-hero h2 {
+          font-size: 36px;
+          color: var(--primary);
+          margin-bottom: 15px;
+      }
+
+      .module-hero p {
+          font-size: 20px;
+          color: var(--text-light);
+          line-height: 1.6;
+      }
+
+      /* TIPOGRAFIA DE SEÇÃO */
+      .section-header {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          margin-bottom: 25px;
+          margin-top: 50px;
+      }
+
+      .section-header span {
+          font-size: 32px;
+      }
+
+      .section-header h3 {
+          font-size: 24px;
+          color: var(--text);
+      }
+
+      /* CARDS PEDAGÓGICOS (Herdando a base do seu .card, mas sem o hover jump para textos longos) */
+      .pedagogical-card {
+          background: var(--surface);
+          padding: 40px;
+          border-radius: var(--radius);
+          box-shadow: var(--shadow);
+          margin-bottom: 30px;
+          border-left: 6px solid transparent;
+      }
+
+      .pedagogical-card p {
+          font-size: 18px;
+          line-height: 1.6;
+          color: var(--text-light);
+          margin-bottom: 15px;
+      }
+
+      .pedagogical-card ul,
+      .pedagogical-card ol {
+          margin-left: 20px;
+          margin-bottom: 15px;
+      }
+
+      .pedagogical-card li {
+          font-size: 18px;
+          color: var(--text-light);
+          margin-bottom: 10px;
+          line-height: 1.5;
+      }
+
+      /* Cores de intenção usando suas variáveis */
+      .border-primary {
+          border-left-color: var(--primary);
+      }
+
+      .border-accent {
+          border-left-color: var(--accent);
+          background: #fffde7;
+      }
+
+      .border-secondary {
+          border-left-color: var(--secondary);
+      }
+
+      .border-danger {
+          border-left-color: var(--danger);
+          background: #fce8e6;
+      }
+
+      /* VIDEOAULA */
+      .video-wrapper {
+          position: relative;
+          padding-bottom: 56.25%;
+          height: 0;
+          border-radius: var(--radius);
+          overflow: hidden;
+          box-shadow: var(--shadow);
+          background: #000;
+          margin-bottom: 25px;
+      }
+
+      .video-wrapper iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+      }
+
+      /* ATENÇÃO */
+      .attention-box {
+          background: #e8f0fe;
+          padding: 20px 25px;
+          border-radius: var(--radius);
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          margin-bottom: 40px;
+      }
+
+      .attention-box .icon {
+          font-size: 32px;
+      }
+
+      .attention-box p {
+          margin: 0;
+          font-size: 16px;
+          color: var(--text);
+      }
+
+      /* RECURSOS COMPLEMENTARES */
+      .resource-link {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          padding: 20px;
+          background: var(--surface);
+          border: 1px solid #dadce0;
+          border-radius: var(--radius);
+          margin-bottom: 15px;
+          transition: .3s;
+      }
+
+      .resource-link:hover {
+          box-shadow: var(--shadow);
+          border-color: transparent;
+      }
+
+      .resource-link h4 {
+          color: var(--primary);
+          font-size: 18px;
+          margin-bottom: 5px;
+      }
+
+      .resource-link p {
+          color: var(--text-light);
+          font-size: 14px;
+          margin: 0;
+      }
+
+      /* SESSÃO FINAL */
+      .completion-box {
+          text-align: center;
+          padding: 60px 20px;
+          background: var(--surface);
+          border-radius: var(--radius);
+          box-shadow: var(--shadow);
+          margin-top: 60px;
+      }
+
+      .completion-box h2 {
+          font-size: 28px;
+          color: var(--text);
+          margin-bottom: 15px;
+      }
