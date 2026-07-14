@@ -146,10 +146,124 @@ padding:
 
 
 
-.support {
+/* ===================================
+   SEÇÃO DE ENVIO DO TRABALHO FINAL (Destaque Premium)
+=================================== */
+.envio-trabalho {
+    padding: 60px 0 80px;
+}
 
-text-align:center;
+.envio-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(26, 115, 232, 0.08); /* Sombra suave azulada */
+    border: 2px solid #e8f0fe;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
 
+/* Faixa/Selo de destaque no topo */
+.envio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.envio-badge {
+    display: inline-block;
+    background-color: #e8f0fe;
+    color: var(--primary);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.envio-card h2 {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.envio-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-light);
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+/* Checklist para preenchimento */
+.envio-checklist {
+    background: #f8f9fa;
+    border: 1px solid #e8eaed;
+    border-radius: var(--radius);
+    padding: 25px 30px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.envio-checklist h3 {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.envio-checklist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.envio-checklist li {
+    font-size: 15px;
+    color: var(--text-light);
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.envio-checklist li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Caixa com prazo limite destacando urgência */
+.envio-deadline {
+    background-color: #fff0f0;
+    border: 1px dashed var(--danger);
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 35px;
+    color: #c5221f;
+}
+
+.envio-button {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 16px 40px;
+    box-shadow: 0 4px 14px rgba(26, 115, 232, 0.3);
+}
+
+.envio-button:hover {
+    box-shadow: 0 6px 20px rgba(26, 115, 232, 0.4);
 }
 
 
