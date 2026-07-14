@@ -1,0 +1,512 @@
+/* ===================================
+   MÓDULO MINHA JORNADA
+   Formação Letramento Digital Docente
+=================================== */
+
+
+/* ===================================
+   HERO
+=================================== */
+
+
+.journey-hero {
+
+text-align:center;
+
+padding:80px 0;
+
+}
+
+
+.hero-content {
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+
+
+.journey-hero h2 {
+
+font-size:42px;
+
+margin-bottom:20px;
+
+color:var(--primary);
+
+}
+
+
+
+.journey-hero p {
+
+font-size:20px;
+
+color:var(--text-light);
+
+max-width:850px;
+
+margin:15px auto;
+
+line-height:1.6;
+
+}
+
+
+
+.journey-hero .btn-primary {
+
+display:inline-block;
+
+margin-top:30px;
+
+}
+
+
+
+
+
+/* ===================================
+   BLOCOS DE CONTEÚDO
+=================================== */
+
+
+.journey {
+
+padding:50px 0;
+
+}
+
+
+
+.journey h2 {
+
+font-size:32px;
+
+margin-bottom:35px;
+
+text-align:center;
+
+}
+
+
+
+
+
+/* ===================================
+   CARD DE BOAS-VINDAS
+=================================== */
+
+
+.welcome-card {
+
+background:var(--surface);
+
+padding:40px;
+
+border-radius:var(--radius);
+
+box-shadow:var(--shadow);
+
+line-height:1.8;
+
+}
+
+
+
+
+
+/* ===================================
+   CARDS GERAIS
+=================================== */
+
+
+.cards {
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.card {
+
+
+background:var(--surface);
+
+padding:30px;
+
+border-radius:var(--radius);
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover {
+
+transform:translateY(-5px);
+
+}
+
+
+
+
+.card h3 {
+
+color:var(--primary);
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+
+
+.card p {
+
+line-height:1.6;
+
+color:var(--text-light);
+
+}
+
+
+
+
+
+/* ===================================
+   OBJETIVOS
+=================================== */
+
+
+.objective-card {
+
+text-align:center;
+
+min-height:220px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+}
+
+
+
+.objective-card h3 {
+
+color:var(--primary);
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+/* ===================================
+   MAPA DA JORNADA
+=================================== */
+
+
+.timeline {
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.timeline-item {
+
+
+background:var(--surface);
+
+border:3px solid var(--primary);
+
+padding:25px;
+
+border-radius:var(--radius);
+
+width:220px;
+
+min-height:220px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+
+
+}
+
+
+
+.timeline-item span {
+
+
+font-size:28px;
+
+font-weight:bold;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+
+}
+
+
+
+
+.timeline-item h3 {
+
+
+font-size:22px;
+
+margin-bottom:10px;
+
+
+}
+
+
+
+
+.timeline-item p {
+
+
+font-size:16px;
+
+line-height:1.5;
+
+color:var(--text-light);
+
+
+}
+
+
+
+/* etapa atual */
+
+
+.timeline-item.active {
+
+
+background:var(--primary);
+
+color:white;
+
+
+}
+
+
+
+.timeline-item.active span,
+
+.timeline-item.active h3,
+
+.timeline-item.active p {
+
+
+color:white;
+
+
+}
+
+
+
+.timeline-item:hover {
+
+
+transform:scale(1.05);
+
+
+}
+
+
+
+
+.arrow {
+
+
+font-size:35px;
+
+color:var(--text-light);
+
+
+}
+
+
+
+
+
+/* ===================================
+   PRÓXIMO MÓDULO
+=================================== */
+
+
+.next-module {
+
+
+margin-top:40px;
+
+text-align:center;
+
+padding:40px;
+
+
+}
+
+
+
+.next-module p {
+
+
+max-width:700px;
+
+margin:0 auto 25px;
+
+line-height:1.7;
+
+
+}
+
+
+
+
+
+/* ===================================
+   BOTÕES
+=================================== */
+
+
+.btn-primary {
+
+
+padding:14px 30px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+/* ===================================
+   RESPONSIVIDADE
+=================================== */
+
+
+@media(max-width:768px){
+
+
+
+.journey-hero {
+
+
+padding:50px 20px;
+
+
+}
+
+
+
+.journey-hero h2 {
+
+
+font-size:32px;
+
+
+}
+
+
+
+.journey-hero p {
+
+
+font-size:18px;
+
+
+}
+
+
+
+
+.timeline {
+
+
+flex-direction:column;
+
+
+}
+
+
+
+
+.arrow {
+
+
+transform:rotate(90deg);
+
+
+}
+
+
+
+.timeline-item {
+
+
+width:90%;
+
+
+}
+
+
+
+.cards {
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+}
